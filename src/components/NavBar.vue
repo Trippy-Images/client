@@ -1,11 +1,12 @@
 <template>
-    <b-container fluid>
-        <b-row id="parent">
-            <b-col>Logo</b-col>
-            <b-col>Nama Web</b-col>
-            <b-col>User</b-col>
-        </b-row>
-    </b-container>
+    <div>
+  <b-navbar type="light" id="clientNavbar">
+    <b-navbar-brand href="#" id="WebName">
+      <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="Kitten">
+      Trippy Image
+    </b-navbar-brand>
+  </b-navbar>
+</div>
 </template>
 
 <script>
@@ -15,7 +16,11 @@ export default {
 </script>
 
 <style scoped>
-    #parent {
-        border: 2px solid black
+    #clientNavbar {
+        background: black;
+        
+    }
+    #WebName {
+        color: white;
     }
 </style>

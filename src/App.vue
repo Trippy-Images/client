@@ -1,20 +1,18 @@
 <template>
-  <Parent></Parent>
+  <parent></parent>
 </template>
 
 <script>
-import Parent from './components/Parent'
+import parent from './components/parent'
+
 export default {
   data() {
     return {
       
     };
   },
-  methods: {
-
-  },
-  components: {
-    Parent
+  components:{
+    parent
   }
 };
 </script>

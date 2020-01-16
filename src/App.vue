@@ -1,14 +1,21 @@
 <template>
-  <h1>{{ message }}</h1>
+  <Parent></Parent>
 </template>
 
 <script>
+import Parent from './components/Parent'
 export default {
   data() {
     return {
-      message: 'Hello world',
+      
     };
   },
+  methods: {
+
+  },
+  components: {
+    Parent
+  }
 };
 </script>
 

@@ -166,6 +166,7 @@ export default {
         logout(){
             localStorage.clear()
             this.isLogin =false
+            this.resultPart = null
         }
     }
 }

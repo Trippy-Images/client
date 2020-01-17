@@ -1,5 +1,6 @@
 <template>
     <div id="Content">
+        <FacebookShareButton></FacebookShareButton>
     <div>
   <b-navbar toggleable="lg" type="dark" variant="info">
     <b-navbar-brand href="#">Trippy Image</b-navbar-brand>
@@ -62,10 +63,13 @@
 import Upload from './Upload'
 import axios from 'axios'
 
+import FacebookShareButton from './FacebookShareButton'
+
 export default {
     name: 'parent',
     components: {
-        Upload
+        Upload,
+        FacebookShareButton
     },
     created(){
         if(localStorage.getItem('token')){

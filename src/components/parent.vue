@@ -106,7 +106,7 @@ export default {
 
             axios({
                 method: 'post',
-                url: 'http://localhost:3000/trippy',
+                url: 'https://trippy-server.prograami.com/trippy',
                 data: imageDatas,
                 headers:{
                     token: localStorage.getItem('token'),

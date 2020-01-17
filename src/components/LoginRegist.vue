@@ -41,7 +41,7 @@ export default {
     register() {
       axios({
         method: "post",
-        url: "http://localhost:3000/register",
+        url: "https://trippy-server.prograami.com/register",
         data: {
           email: this.email,
           password: this.password
@@ -63,7 +63,7 @@ export default {
     login(){
         axios({
             method:'post',
-            url: "http://localhost:3000/login",
+            url: "https://trippy-server.prograami.com/login",
             data:{
                 email: this.email,
                 password: this.password

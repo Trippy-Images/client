@@ -1,6 +1,6 @@
 <template>
     <b-col cols="6" class="d-flex flex-column border p-3">
-        <img class="rounded p-3" v-if="url" :src="url" style="align-self: center; height: 300px">
+        <img class="rounded p-3 img-fl" v-if="url" :src="url" style="align-self: center; height: 300px">
         <b-form-file @change="onFileChange"
         v-model="file"
         :state="Boolean(file)"

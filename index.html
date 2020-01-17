@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div id="app">
 
     </div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '169672794397812',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v5.0'
+            });
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="/src/main.js"></script>
 </body>
+
 </html>

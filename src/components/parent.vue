@@ -38,10 +38,15 @@
             <b-img id="resultFinal" v-bind:src="resultPart" fluid-grow alt="Fluid-grow image"></b-img>
             </b-col>
     </b-row>
-    <b-row class="text-center justify-content-md-center" v-if="resultPart">
+    <b-row class="text-center justify-content-md-center my-4" v-if="resultPart">
+        <b-col cols="4"></b-col>
         <b-col>
-            <b-button class="my-4" pill variant="dark" v-on:click="againButton" size="lg">again</b-button>
+            <b-button pill variant="dark" v-on:click="againButton" size="lg">Again</b-button>
         </b-col>
+        <b-col>
+            <FacebookShareButton v-bind:facebookShare="resultPart"></FaceBookShareButton>
+        </b-col>
+        <b-col cols="4"></b-col>
     </b-row>
     <b-row class="text-center justify-content-md-center" v-if="isLogin" id="uploadForm">
         <Upload v-on:imageSelected="addImage($event, 0)" v-bind:deleteImage='clearImage'></Upload>

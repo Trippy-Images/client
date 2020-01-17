@@ -21,8 +21,10 @@
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.2",
+    "sweetalert2": "^9.6.0",
     "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-upload-multiple-image": "^1.1.4"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.1",

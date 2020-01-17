@@ -1,18 +1,18 @@
 <template>
   <div>
-    <button @click.prevent="shareToFacebook">Share To Facebook</button>
+    <b-button pill variant="primary" size="lg" @click.prevent="shareToFacebook">Share To Facebook</b-button>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['facebookShare'],
   methods: {
     shareToFacebook() {
       FB.ui(
         {
           method: "share",
-          href:
-            "http://advice.uk.match.com/quizzes/which-european-are-you-destined-date"
+          href: this.facebookShare
         },
         function(response) {}
       );
